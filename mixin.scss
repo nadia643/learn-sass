@@ -1,5 +1,7 @@
 @mixin thick-ness($thickness) {
     border-width: $thickness;
+    @content;
+    border-style: solid;
 }
 
 img { @include thick-ness(10px); }
